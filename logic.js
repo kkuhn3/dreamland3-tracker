@@ -82,7 +82,7 @@ const locationLogic = {
 		return has("Needle");
 	},
 	"grass_land_muchi": function() {
-		return has("Stone");
+		return has("Chuchu");
 	},
 	"grass_land_2": function() {
 		return "logical";

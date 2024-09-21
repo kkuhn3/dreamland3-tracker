@@ -162,14 +162,7 @@ function setSettingClass(div, className) {
 //Settings - items in logic
 function settingIterateOnClick(div, count) {
 	settingIterate(div, count);
-	updateLocations();
-	updateGroups();
-	countchecks();
-}
-function shuffleHiddenOnClick() {
-	settingIterate(shuffle_hidden, 2);
 	groupBreakDown.innerHTML = "";
-	hideToMatchHidden();
 	updateLocations();
 	updateGroups();
 	countchecks();
@@ -177,86 +170,27 @@ function shuffleHiddenOnClick() {
 		groupFocus(document.getElementById(currentGroup));
 	}
 }
-function hideToMatchHidden() {
-	const enumInt = parseInt(shuffle_hidden.classList[1].substring(1), 10);
+function shuffleConsumablesOnClick() {
+	settingIterate(randomize_consumables, 1);
+	groupBreakDown.innerHTML = "";
+	hideToMatchConsumables();
+	updateLocations();
+	updateGroups();
+	countchecks();
+	if (currentGroup) {
+		groupFocus(document.getElementById(currentGroup));
+	}
+}
+function hideToMatchConsumables() {
+	const enumInt = parseInt(randomize_consumables.classList[1].substring(1), 10);
 	if (enumInt === 0) {
-		for (let divId of hiddenLocs) {
+		for (let divId of consumableLocs) {
 			let div = document.getElementById(divId);
-			addClassName(div, "hiddenhidden");
-		}
-		for (let divId of recurringLocs) {
-			let div = document.getElementById(divId);
-			addClassName(div, "hiddenhidden");
+			addClassName(div, "althidden");
 		}
 	}
 	else if (enumInt === 1) {
-		for (let divId of hiddenLocs) {
-			let div = document.getElementById(divId);
-			div.classList.remove("hiddenhidden");
-		}
-		for (let divId of recurringLocs) {
-			let div = document.getElementById(divId);
-			addClassName(div, "hiddenhidden");
-		}
-	}
-	else {
-		for (let divId of hiddenLocs) {
-			let div = document.getElementById(divId);
-			div.classList.remove("hiddenhidden");
-		}
-		for (let divId of recurringLocs) {
-			let div = document.getElementById(divId);
-			div.classList.remove("hiddenhidden");
-		}
-	}
-}
-function kantoOnlyOnClick() {
-	settingIterate(kanto_only, 1);
-	groupBreakDown.innerHTML = "";
-	hideToMatchKanto();
-	updateLocations();
-	updateGroups();
-	countchecks();
-	if (currentGroup) {
-		groupFocus(document.getElementById(currentGroup));
-	}
-}
-function hideToMatchKanto() {
-	const enumInt = parseInt(kanto_only.classList[1].substring(1), 10);
-	if (enumInt === 0) {
-		for (let divId of seviiLocs) {
-			let div = document.getElementById(divId);
-			div.classList.remove("althidden");
-		}
-	}
-	else {
-		for (let divId of seviiLocs) {
-			let div = document.getElementById(divId);
-			addClassName(div, "althidden");
-		}
-	}
-}
-function ceruleanCaveOnClick() {
-	settingIterate(cerulean_cave_requirement, 4);
-	groupBreakDown.innerHTML = "";
-	hideToMatchCeruleanCave();
-	updateLocations();
-	updateGroups();
-	countchecks();
-	if (currentGroup) {
-		groupFocus(document.getElementById(currentGroup));
-	}
-}
-function hideToMatchCeruleanCave() {
-	const enumInt = parseInt(cerulean_cave_requirement.classList[1].substring(1), 10);
-	if (enumInt === 0 || enumInt === 1) {
-		for (let divId of ceruleanCaveLocs) {
-			let div = document.getElementById(divId);
-			addClassName(div, "althidden");
-		}
-	}
-	else {
-		for (let divId of ceruleanCaveLocs) {
+		for (let divId of consumableLocs) {
 			let div = document.getElementById(divId);
 			div.classList.remove("althidden");
 		}

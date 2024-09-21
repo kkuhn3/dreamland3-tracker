@@ -13,7 +13,7 @@
 			<div id="settings">
 				<img class="setting _0" id="stages_for_boss" onclick="settingIterateOnClick(this, 6)">
 				<img class="setting _0" id="hearts_for_boss" onclick="settingIterateOnClick(this, 10)">
-				<img class="setting _0" id="randomize_consumables" onclick="settingIterateOnClick(this, 1)">
+				<img class="setting _0" id="randomize_consumables" onclick="shuffleConsumablesOnClick()">
 				<div class="setting notImageImage" id="CHECK_CHECKED">0</div>
 				<div class="setting notImageImage" id="CHECK_LOGICAL">50</div>
 				<div class="setting notImageImage" id="CHECK_TOTAL">300</div>
@@ -273,6 +273,7 @@
 	<script>
 		addOnClick();
 		parseSettings();
+		hideToMatchConsumables();
 		updateLocations();
 		updateGroups();
 		countchecks();

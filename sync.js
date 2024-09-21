@@ -5,8 +5,8 @@ let idToString = {};
 let idToItem = {};
 let idToLocation = {};
 let idToEvent = {};
-// https://github.com/vyneras/Archipelago/blob/frlg-stable/worlds/pokemon_frlg/data.py
-const offset = 6420000;
+// https://github.com/ArchipelagoMW/Archipelago/blob/main/worlds/kdl3/locations.py
+const offset = 0;
 async function loadStaticContent() {
 	const res1 = await fetch('./static/idToString.json', {
 		method: 'GET'
@@ -36,7 +36,7 @@ function connect() {
 		socket.send(`[{
 			"cmd" : "Connect",
 			"password" : "",
-			"game" : "Pokemon Firered and Leafgreen",
+			"game" : "Kirby's Dream Land 3",
 			"name" : "` + pname + `",
 			"tags" : ["Tracker"],
 			"version" : {
@@ -125,7 +125,12 @@ function connect() {
 function gotItem(id) {
 	let itemName = idToItem[id - offset];
 	if (itemName) {
-		addClassName(document.getElementById(itemName), "itemchecked")
+		if (itemName === "Heart Star") {
+			settingIterateOnClick(heartStars, 50);
+		}
+		else {
+			addClassName(document.getElementById(itemName), "itemchecked");
+		}
 	}
 }
 
