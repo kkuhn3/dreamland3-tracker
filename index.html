@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<title>Dreamland 3 Tracker</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="locations.css">
+	<link rel="stylesheet" href="items.css">
+	<script src="static/locationType.js" type="text/javascript"></script>
+	<script src="index.js" type="text/javascript"></script>
+	<script src="logic.js" type="text/javascript"></script>
+	<script src="sync.js" type="text/javascript"></script>
+	<body>
+		<div id="leftCol">
+			<div id="settings">
+				<img class="setting _0" id="stages_for_boss" onclick="settingIterateOnClick(this, 6)">
+				<img class="setting _0" id="hearts_for_boss" onclick="settingIterateOnClick(this, 10)">
+				<img class="setting _0" id="randomize_consumables" onclick="settingIterateOnClick(this, 1)">
+				<div class="setting notImageImage" id="CHECK_CHECKED">0</div>
+				<div class="setting notImageImage" id="CHECK_LOGICAL">50</div>
+				<div class="setting notImageImage" id="CHECK_TOTAL">300</div>
+			</div>
+			<div id="items">
+				<img class="item" id="Rick" onclick="">
+				<img class="item" id="Coo" onclick="">
+				<img class="item" id="Kine" onclick="">
+				<img class="item" id="Nago" onclick="">
+				<img class="item" id="Chuchu" onclick="">
+				<img class="item" id="Pitch" onclick="">
+				<img class="iterItem _0" id="heartStars" onclick="settingIterateOnClick(this, 50)">
+				<img class="item smallItem" id="Burning" onclick="">
+				<img class="item smallItem" id="Cleaning" onclick="">
+				<img class="item smallItem" id="Cutter" onclick="">
+				<img class="item smallItem" id="Ice" onclick="">
+				<img class="item smallItem" id="Needle" onclick="">
+				<img class="item smallItem" id="Parasol" onclick="">
+				<img class="item smallItem" id="Spark" onclick="">
+				<img class="item smallItem" id="Stone" onclick="">
+			</div>
+			<div id="itemHoverDesc">
+				&nbsp
+			</div>
+			<div id="groupBreakDown">
+
+			</div>
+		</div>
+
+		<div id="map">
+			<img id="dreamland" src="./images/dreamland.png">
+			<!-- Grass Land -->
+			<div class="group" id="grass_land_stage_1">
+				<div class="sub" id="grass_land_1_u1"></div>
+				<div class="sub" id="grass_land_1_m1"></div>
+				<div class="sub" id="grass_land_tulip"></div>
+				<div class="sub" id="grass_land_1"></div>
+				<div class="sub" id="EVENT_grass_land_1"></div>
+			</div>
+			<div class="group" id="grass_land_stage_2">
+				<div class="sub" id="grass_land_2_u1"></div>
+				<div class="sub" id="grass_land_muchi"></div>
+				<div class="sub" id="grass_land_2"></div>
+				<div class="sub" id="EVENT_grass_land_2"></div>
+			</div>
+			<div class="group" id="grass_land_stage_3">
+				<div class="sub" id="grass_land_3_u1"></div>
+				<div class="sub" id="grass_land_3_m1"></div>
+				<div class="sub" id="grass_land_pitcherman"></div>
+				<div class="sub" id="grass_land_3"></div>
+				<div class="sub" id="EVENT_grass_land_3"></div>
+			</div>
+			<div class="group" id="grass_land_stage_4">
+				<div class="sub" id="grass_land_4_u1"></div>
+				<div class="sub" id="grass_land_4_m1"></div>
+				<div class="sub" id="grass_land_4_m2"></div>
+				<div class="sub" id="grass_land_4_m3"></div>
+				<div class="sub" id="grass_land_chao"></div>
+				<div class="sub" id="grass_land_4"></div>
+				<div class="sub" id="EVENT_grass_land_5"></div>
+			</div>
+			<div class="group" id="grass_land_stage_5">
+				<div class="sub" id="grass_land_mine"></div>
+				<div class="sub" id="grass_land_5"></div>
+				<div class="sub" id="EVENT_grass_land_5"></div>
+			</div>
+			<div class="group" id="grass_land_stage_6">
+				<div class="sub" id="grass_land_6_u1"></div>
+				<div class="sub" id="grass_land_6_u2"></div>
+				<div class="sub" id="grass_land_pierre"></div>
+				<div class="sub" id="grass_land_6"></div>
+				<div class="sub" id="EVENT_grass_land_6"></div>
+			</div>
+			<div class="group" id="grass_land_boss">
+				<div class="sub" id="grass_land_whispy"></div>
+				<div class="sub" id="EVENT_grass_land_boss"></div>
+			</div>
+			<!-- Ripple Field -->
+			<div class="group" id="ripple_field_stage_1">
+				<div class="sub" id="ripple_field_kamuribana"></div>
+				<div class="sub" id="ripple_field_1"></div>
+				<div class="sub" id="EVENT_ripple_field_1"></div>
+			</div>
+			<div class="group" id="ripple_field_stage_2">
+				<div class="sub" id="ripple_field_2_u1"></div>
+				<div class="sub" id="ripple_field_2_m1"></div>
+				<div class="sub" id="ripple_field_bakasa"></div>
+				<div class="sub" id="ripple_field_2"></div>
+				<div class="sub" id="EVENT_ripple_field_2"></div>
+			</div>
+			<div class="group" id="ripple_field_stage_3">
+				<div class="sub" id="ripple_field_3_u1"></div>
+				<div class="sub" id="ripple_field_3_m1"></div>
+				<div class="sub" id="ripple_field_elieel"></div>
+				<div class="sub" id="ripple_field_3"></div>
+				<div class="sub" id="EVENT_ripple_field_3"></div>
+			</div>
+			<div class="group" id="ripple_field_stage_4">
+				<div class="sub" id="ripple_field_4_u1"></div>
+				<div class="sub" id="ripple_field_4_m1"></div>
+				<div class="sub" id="ripple_field_4_m2"></div>
+				<div class="sub" id="ripple_field_toad"></div>
+				<div class="sub" id="ripple_field_4"></div>
+				<div class="sub" id="EVENT_ripple_field_5"></div>
+			</div>
+			<div class="group" id="ripple_field_stage_5">
+				<div class="sub" id="ripple_field_5_u1"></div>
+				<div class="sub" id="ripple_field_5_m1"></div>
+				<div class="sub" id="ripple_field_5_m2"></div>
+				<div class="sub" id="ripple_field_mama_pitch"></div>
+				<div class="sub" id="ripple_field_5"></div>
+				<div class="sub" id="EVENT_ripple_field_5"></div>
+			</div>
+			<div class="group" id="ripple_field_stage_6">
+				<div class="sub" id="ripple_field_hb002"></div>
+				<div class="sub" id="ripple_field_6"></div>
+				<div class="sub" id="EVENT_ripple_field_6"></div>
+			</div>
+			<div class="group" id="ripple_field_boss">
+				<div class="sub" id="ripple_field_acro"></div>
+				<div class="sub" id="EVENT_ripple_field_boss"></div>
+			</div>
+			<!-- Sand Canyon -->
+			<div class="group" id="sand_canyon_stage_1">
+				<div class="sub" id="sand_canyon_1_u1"></div>
+				<div class="sub" id="sand_canyon_mushrooms"></div>
+				<div class="sub" id="sand_canyon_1"></div>
+				<div class="sub" id="EVENT_sand_canyon_1"></div>
+			</div>
+			<div class="group" id="sand_canyon_stage_2">
+				<div class="sub" id="sand_canyon_2_u1"></div>
+				<div class="sub" id="sand_canyon_2_m1"></div>
+				<div class="sub" id="sand_canyon_auntie"></div>
+				<div class="sub" id="sand_canyon_2"></div>
+				<div class="sub" id="EVENT_sand_canyon_2"></div>
+			</div>
+			<div class="group" id="sand_canyon_stage_3">
+				<div class="sub" id="sand_canyon_caramello"></div>
+				<div class="sub" id="sand_canyon_3"></div>
+				<div class="sub" id="EVENT_sand_canyon_3"></div>
+			</div>
+			<div class="group" id="sand_canyon_stage_4">
+				<div class="sub" id="sand_canyon_4_u1"></div>
+				<div class="sub" id="sand_canyon_4_m1"></div>
+				<div class="sub" id="sand_canyon_4_m2"></div>
+				<div class="sub" id="sand_canyon_hikari"></div>
+				<div class="sub" id="sand_canyon_4"></div>
+				<div class="sub" id="EVENT_sand_canyon_5"></div>
+			</div>
+			<div class="group" id="sand_canyon_stage_5">
+				<div class="sub" id="sand_canyon_5_u1"></div>
+				<div class="sub" id="sand_canyon_5_u2"></div>
+				<div class="sub" id="sand_canyon_5_u3"></div>
+				<div class="sub" id="sand_canyon_5_u4"></div>
+				<div class="sub" id="sand_canyon_5_m1"></div>
+				<div class="sub" id="sand_canyon_nyupun"></div>
+				<div class="sub" id="sand_canyon_5"></div>
+				<div class="sub" id="EVENT_sand_canyon_5"></div>
+			</div>
+			<div class="group" id="sand_canyon_stage_6">
+				<div class="sub" id="sand_canyon_rob"></div>
+				<div class="sub" id="sand_canyon_6"></div>
+				<div class="sub" id="EVENT_sand_canyon_6"></div>
+			</div>
+			<div class="group" id="sand_canyon_boss">
+				<div class="sub" id="sand_canyon_poncon"></div>
+				<div class="sub" id="EVENT_sand_canyon_boss"></div>
+			</div>
+			<!-- Cloudy Park -->
+			<div class="group" id="cloudy_park_stage_1">
+				<div class="sub" id="cloudy_park_1_u1"></div>
+				<div class="sub" id="cloudy_park_1_m1"></div>
+				<div class="sub" id="cloudy_park_hibanamodoki"></div>
+				<div class="sub" id="cloudy_park_1"></div>
+				<div class="sub" id="EVENT_cloudy_park_1"></div>
+			</div>
+			<div class="group" id="cloudy_park_stage_2">
+				<div class="sub" id="cloudy_park_piyokeko"></div>
+				<div class="sub" id="cloudy_park_2"></div>
+				<div class="sub" id="EVENT_cloudy_park_2"></div>
+			</div>
+			<div class="group" id="cloudy_park_stage_3">
+				<div class="sub" id="cloudy_park_mrball"></div>
+				<div class="sub" id="cloudy_park_3"></div>
+				<div class="sub" id="EVENT_cloudy_park_3"></div>
+			</div>
+			<div class="group" id="cloudy_park_stage_4">
+				<div class="sub" id="cloudy_park_4_u1"></div>
+				<div class="sub" id="cloudy_park_4_m1"></div>
+				<div class="sub" id="cloudy_park_mikarin"></div>
+				<div class="sub" id="cloudy_park_4"></div>
+				<div class="sub" id="EVENT_cloudy_park_5"></div>
+			</div>
+			<div class="group" id="cloudy_park_stage_5">
+				<div class="sub" id="cloudy_park_5_m1"></div>
+				<div class="sub" id="cloudy_park_pick"></div>
+				<div class="sub" id="cloudy_park_5"></div>
+				<div class="sub" id="EVENT_cloudy_park_5"></div>
+			</div>
+			<div class="group" id="cloudy_park_stage_6">
+				<div class="sub" id="cloudy_park_6_u1"></div>
+				<div class="sub" id="cloudy_park_hb007"></div>
+				<div class="sub" id="cloudy_park_6"></div>
+				<div class="sub" id="EVENT_cloudy_park_6"></div>
+			</div>
+			<div class="group" id="cloudy_park_boss">
+				<div class="sub" id="cloudy_park_ado"></div>
+				<div class="sub" id="EVENT_cloudy_park_boss"></div>
+			</div>
+			<!-- Iceberg -->
+			<div class="group" id="iceberg_stage_1">
+				<div class="sub" id="iceberg_kogoesou"></div>
+				<div class="sub" id="iceberg_1"></div>
+				<div class="sub" id="EVENT_iceberg_1"></div>
+			</div>
+			<div class="group" id="iceberg_stage_2">
+				<div class="sub" id="iceberg_samus"></div>
+				<div class="sub" id="iceberg_2"></div>
+				<div class="sub" id="EVENT_iceberg_2"></div>
+			</div>
+			<div class="group" id="iceberg_stage_3">
+				<div class="sub" id="iceberg_3_m1"></div>
+				<div class="sub" id="iceberg_kawasaki"></div>
+				<div class="sub" id="iceberg_3"></div>
+				<div class="sub" id="EVENT_iceberg_3"></div>
+			</div>
+			<div class="group" id="iceberg_stage_4">
+				<div class="sub" id="iceberg_name"></div>
+				<div class="sub" id="iceberg_4"></div>
+				<div class="sub" id="EVENT_iceberg_5"></div>
+			</div>
+			<div class="group" id="iceberg_stage_5">
+				<div class="sub" id="iceberg_5_u1"></div>
+				<div class="sub" id="iceberg_5_u2"></div>
+				<div class="sub" id="iceberg_5_u3"></div>
+				<div class="sub" id="iceberg_shiro"></div>
+				<div class="sub" id="iceberg_5"></div>
+				<div class="sub" id="EVENT_iceberg_5"></div>
+			</div>
+			<div class="group" id="iceberg_stage_6">
+				<div class="sub" id="iceberg_6_u1"></div>
+				<div class="sub" id="iceberg_6_m1"></div>
+				<div class="sub" id="iceberg_angel"></div>
+				<div class="sub" id="iceberg_6"></div>
+				<div class="sub" id="EVENT_iceberg_6"></div>
+			</div>
+			<div class="group" id="iceberg_boss">
+				<div class="sub" id="iceberg_dedede"></div>
+				<div class="sub" id="EVENT_iceberg_boss"></div>
+			</div>
+			<!-- Hyper Zone -->
+			<div class="location" id="EVENT_hyper_zone"></div>
+			<!-- The on hover blurb -->
+			<div id="idViewer"></div>
+		</div>
+	</body>
+	<script>
+		addOnClick();
+		parseSettings();
+		//updateLocations();
+		//updateGroups();
+		//countchecks();
+		(async() => {
+			await loadStaticContent();
+			connect();
+		})()
+	</script>
+<html>

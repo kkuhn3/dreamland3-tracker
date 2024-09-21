@@ -1,0 +1,262 @@
+/* Friends, Row 1 */
+#Rick {
+	background-image: url(./images/items/rick.png);
+}
+#Coo {
+	background-image: url(./images/items/coo.png);
+}
+#Kine {
+	background-image: url(./images/items/kine.png);
+}
+#Nago {
+	background-image: url(./images/items/nago.png);
+}
+#Chuchu {
+	background-image: url(./images/items/chuchu.png);
+}
+#Pitch {
+	background-image: url(./images/items/pitch.png);
+}
+
+/* Copy Abilities, Row 2 */
+#Burning {
+	background-image: url(./images/items/burning.png);
+}
+#Cleaning {
+	background-image: url(./images/items/cleaning.png);
+}
+#Cutter {
+	background-image: url(./images/items/cutter.png);
+}
+#Ice {
+	background-image: url(./images/items/ice.png);
+}
+#Needle {
+	background-image: url(./images/items/needle.png);
+}
+#Parasol {
+	background-image: url(./images/items/parasol.png);
+}
+#Spark {
+	background-image: url(./images/items/spark.png);
+}
+#Stone {
+	background-image: url(./images/items/stone.png);
+}
+
+/* Settings */
+#stages_for_boss._0 {
+	background-image: url(./images/settings/sc_0.png);
+}
+#stages_for_boss._1 {
+	background-image: url(./images/settings/sc_1.png);
+}
+#stages_for_boss._2 {
+	background-image: url(./images/settings/sc_2.png);
+}
+#stages_for_boss._3 {
+	background-image: url(./images/settings/sc_3.png);
+}
+#stages_for_boss._4 {
+	background-image: url(./images/settings/sc_4.png);
+}
+#stages_for_boss._5 {
+	background-image: url(./images/settings/sc_5.png);
+}
+#stages_for_boss._6 {
+	background-image: url(./images/settings/sc_6.png);
+}
+#hearts_for_boss._0 {
+	background-image: url(./images/settings/hs_0.png);
+}
+#hearts_for_boss._1 {
+	background-image: url(./images/settings/hs_1.png);
+}
+#hearts_for_boss._2 {
+	background-image: url(./images/settings/hs_2.png);
+}
+#hearts_for_boss._3 {
+	background-image: url(./images/settings/hs_3.png);
+}
+#hearts_for_boss._4 {
+	background-image: url(./images/settings/hs_4.png);
+}
+#hearts_for_boss._5 {
+	background-image: url(./images/settings/hs_5.png);
+}
+#hearts_for_boss._6 {
+	background-image: url(./images/settings/hs_6.png);
+}
+#hearts_for_boss._7 {
+	background-image: url(./images/settings/hs_7.png);
+}
+#hearts_for_boss._8 {
+	background-image: url(./images/settings/hs_8.png);
+}
+#hearts_for_boss._9 {
+	background-image: url(./images/settings/hs_9.png);
+}
+#hearts_for_boss._10 {
+	background-image: url(./images/settings/hs_10.png);
+}
+#randomize_consumables._0 {
+	background-image: url(./images/settings/rc_0.png);
+}
+#randomize_consumables._1 {
+	background-image: url(./images/settings/rc_1.png);
+}
+
+/* Heart Stars */
+#heartStars._0 {
+	background-image: url(./images/settings/hs_0.png);
+}
+#heartStars._1 {
+	background-image: url(./images/settings/hs_1.png);
+}
+#heartStars._2 {
+	background-image: url(./images/settings/hs_2.png);
+}
+#heartStars._3 {
+	background-image: url(./images/settings/hs_3.png);
+}
+#heartStars._4 {
+	background-image: url(./images/settings/hs_4.png);
+}
+#heartStars._5 {
+	background-image: url(./images/settings/hs_5.png);
+}
+#heartStars._6 {
+	background-image: url(./images/settings/hs_6.png);
+}
+#heartStars._7 {
+	background-image: url(./images/settings/hs_7.png);
+}
+#heartStars._8 {
+	background-image: url(./images/settings/hs_8.png);
+}
+#heartStars._9 {
+	background-image: url(./images/settings/hs_9.png);
+}
+#heartStars._10 {
+	background-image: url(./images/settings/hs_10.png);
+}
+#heartStars._11 {
+	background-image: url(./images/settings/hs_11.png);
+}
+#heartStars._12 {
+	background-image: url(./images/settings/hs_12.png);
+}
+#heartStars._13 {
+	background-image: url(./images/settings/hs_13.png);
+}
+#heartStars._14 {
+	background-image: url(./images/settings/hs_14.png);
+}
+#heartStars._15 {
+	background-image: url(./images/settings/hs_15.png);
+}
+#heartStars._16 {
+	background-image: url(./images/settings/hs_16.png);
+}
+#heartStars._17 {
+	background-image: url(./images/settings/hs_17.png);
+}
+#heartStars._18 {
+	background-image: url(./images/settings/hs_18.png);
+}
+#heartStars._19 {
+	background-image: url(./images/settings/hs_19.png);
+}
+#heartStars._20 {
+	background-image: url(./images/settings/hs_20.png);
+}
+#heartStars._21 {
+	background-image: url(./images/settings/hs_21.png);
+}
+#heartStars._22 {
+	background-image: url(./images/settings/hs_22.png);
+}
+#heartStars._23 {
+	background-image: url(./images/settings/hs_23.png);
+}
+#heartStars._24 {
+	background-image: url(./images/settings/hs_24.png);
+}
+#heartStars._25 {
+	background-image: url(./images/settings/hs_25.png);
+}
+#heartStars._26 {
+	background-image: url(./images/settings/hs_26.png);
+}
+#heartStars._27 {
+	background-image: url(./images/settings/hs_27.png);
+}
+#heartStars._28 {
+	background-image: url(./images/settings/hs_28.png);
+}
+#heartStars._29 {
+	background-image: url(./images/settings/hs_29.png);
+}
+#heartStars._30 {
+	background-image: url(./images/settings/hs_30.png);
+}
+#heartStars._31 {
+	background-image: url(./images/settings/hs_31.png);
+}
+#heartStars._32 {
+	background-image: url(./images/settings/hs_32.png);
+}
+#heartStars._33 {
+	background-image: url(./images/settings/hs_33.png);
+}
+#heartStars._34 {
+	background-image: url(./images/settings/hs_34.png);
+}
+#heartStars._35 {
+	background-image: url(./images/settings/hs_35.png);
+}
+#heartStars._36 {
+	background-image: url(./images/settings/hs_36.png);
+}
+#heartStars._37 {
+	background-image: url(./images/settings/hs_37.png);
+}
+#heartStars._38 {
+	background-image: url(./images/settings/hs_38.png);
+}
+#heartStars._39 {
+	background-image: url(./images/settings/hs_39.png);
+}
+#heartStars._40 {
+	background-image: url(./images/settings/hs_40.png);
+}
+#heartStars._41 {
+	background-image: url(./images/settings/hs_41.png);
+}
+#heartStars._42 {
+	background-image: url(./images/settings/hs_42.png);
+}
+#heartStars._43 {
+	background-image: url(./images/settings/hs_43.png);
+}
+#heartStars._44 {
+	background-image: url(./images/settings/hs_44.png);
+}
+#heartStars._45 {
+	background-image: url(./images/settings/hs_45.png);
+}
+#heartStars._46 {
+	background-image: url(./images/settings/hs_46.png);
+}
+#heartStars._47 {
+	background-image: url(./images/settings/hs_47.png);
+}
+#heartStars._48 {
+	background-image: url(./images/settings/hs_48.png);
+}
+#heartStars._49 {
+	background-image: url(./images/settings/hs_49.png);
+}
+#heartStars._50 {
+	background-image: url(./images/settings/hs_50.png);
+}

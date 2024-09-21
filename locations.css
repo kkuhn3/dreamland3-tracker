@@ -1,0 +1,150 @@
+/* Grass Land */
+#grass_land_stage_1 {
+	left: 7.28110599078341%;
+	top: 28.00480769230769%;
+}
+#grass_land_stage_2 {
+	left: 13.548387096774194%;
+	top: 23.557692307692307%;
+}
+#grass_land_stage_3 {
+	left: 15.299539170506913%;
+	top: 41.22596153846154%;
+}
+#grass_land_stage_4 {
+	left: 23.317972350230416%;
+	top: 40.74519230769231%;
+}
+#grass_land_stage_5 {
+	left: 27.465437788018434%;
+	top: 34.375%;
+}
+#grass_land_stage_6 {
+	left: 24.562211981566822%;
+	top: 25.120192307692307%;
+}
+#grass_land_boss {
+	left: 28.571428571428573%;
+	top: 23.076923076923077%;
+}
+/* Ripple Field */
+#ripple_field_stage_1 {
+	left: 40.184331797235025%;
+	top: 33.65384615384615%;
+}
+#ripple_field_stage_2 {
+	left: 42.48847926267281%;
+	top: 23.677884615384613%;
+}
+#ripple_field_stage_3 {
+	left: 48.70967741935484%;
+	top: 35.57692307692307%;
+}
+#ripple_field_stage_4 {
+	left: 54.423963133640555%;
+	top: 23.677884615384613%;
+}
+#ripple_field_stage_5 {
+	left: 59.40092165898618%;
+	top: 38.34134615384615%;
+}
+#ripple_field_stage_6 {
+	left: 62.764976958525345%;
+	top: 27.52403846153846%;
+}
+#ripple_field_boss {
+	left: 61.382488479262676%;
+	top: 20.072115384615383%;
+}
+/* Sand Canyon */
+#sand_canyon_stage_1 {
+	left: 73.82488479262673%;
+	top: 25.841346153846153%;
+}
+#sand_canyon_stage_2 {
+	left: 77.46543778801843%;
+	top: 34.25480769230769%;
+}
+#sand_canyon_stage_3 {
+	left: 81.9815668202765%;
+	top: 30.288461538461537%;
+}
+#sand_canyon_stage_4 {
+	left: 86.45161290322581%;
+	top: 34.01442307692307%;
+}
+#sand_canyon_stage_5 {
+	left: 91.38248847926268%;
+	top: 40.98557692307692%;
+}
+#sand_canyon_stage_6 {
+	left: 89.72350230414747%;
+	top: 30.889423076923077%;
+}
+#sand_canyon_boss {
+	left: 96.12903225806451%;
+	top: 20.79326923076923%;
+}
+/* Cloudy Park */
+#cloudy_park_stage_1 {
+	left: 6.912442396313364%;
+	top: 75.24038461538461%;
+}
+#cloudy_park_stage_2 {
+	left: 11.474654377880185%;
+	top: 72.11538461538461%;
+}
+#cloudy_park_stage_3 {
+	left: 14.055299539170507%;
+	top: 89.66346153846153%;
+}
+#cloudy_park_stage_4 {
+	left: 19.81566820276498%;
+	top: 77.04326923076923%;
+}
+#cloudy_park_stage_5 {
+	left: 25.99078341013825%;
+	top: 85.8173076923077%;
+}
+#cloudy_park_stage_6 {
+	left: 28.110599078341014%;
+	top: 76.6826923076923%;
+}
+#cloudy_park_boss {
+	left: 29.078341013824886%;
+	top: 67.90865384615384%;
+}
+/* Iceberg */
+#iceberg_stage_1 {
+	left: 40.50691244239631%;
+	top: 80.16826923076923%;
+}
+#iceberg_stage_2 {
+	left: 45.57603686635945%;
+	top: 73.67788461538461%;
+}
+#iceberg_stage_3 {
+	left: 51.013824884792626%;
+	top: 86.77884615384615%;
+}
+#iceberg_stage_4 {
+	left: 59.5852534562212%;
+	top: 92.54807692307692%;
+}
+#iceberg_stage_5 {
+	left: 59.81566820276498%;
+	top: 80.76923076923076%;
+}
+#iceberg_stage_6 {
+	left: 61.05990783410139%;
+	top: 74.63942307692308%;
+}
+#iceberg_boss {
+	left: 61.88940092165899%;
+	top: 68.50961538461539%;
+}
+/* Hyper zone */
+#EVENT_hyper_zone {
+	left: 83.31797235023042%;
+	top: 79.32692307692308%;
+}
