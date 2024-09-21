@@ -334,44 +334,14 @@ function countchecks() {
 //Parse URL inputs
 function parseSettings() {
 	const urlSearch = new URLSearchParams(window.location.search);
-	if (isIntLessThan(urlSearch.get("hi"), 1)) {
-		setSettingClass(shuffle_hidden, "_" + urlSearch.get("hi"));
+	if (isIntLessThan(urlSearch.get("sb"), 6)) {
+		setSettingClass(stages_for_boss, "_" + urlSearch.get("sb"));
 	}
-	if (isIntLessThan(urlSearch.get("ko"), 1)) {
-		setSettingClass(kanto_only, "_" + urlSearch.get("ko"));
+	if (isIntLessThan(urlSearch.get("hb"), 6)) {
+		setSettingClass(hearts_for_boss, "_" + urlSearch.get("hb"));
 	}
-	if (isIntLessThan(urlSearch.get("r3"), 1)) {
-		setSettingClass(pewter_city_roadblock, "_" + urlSearch.get("r3"));
-	}
-	if (isIntLessThan(urlSearch.get("vgr"), 7)) {
-		setSettingClass(viridian_gym_requirement, "_" + urlSearch.get("vgr"));
-	}
-	if (isIntLessThan(urlSearch.get("vgc"), 1)) {
-		setSettingClass(viridian_gym_count, "_" + urlSearch.get("vgc"));
-	}
-	if (isIntLessThan(urlSearch.get("r2r"), 8)) {
-		setSettingClass(route22_gate_requirement, "_" + urlSearch.get("r2r"));
-	}
-	if (isIntLessThan(urlSearch.get("r2c"), 2)) {
-		setSettingClass(route22_gate_count, "_" + urlSearch.get("r2c"));
-	}
-	if (isIntLessThan(urlSearch.get("vrr"), 2)) {
-		setSettingClass(route23_guard_requirement, "_" + urlSearch.get("vrr"));
-	}
-	if (isIntLessThan(urlSearch.get("vrc"), 2)) {
-		setSettingClass(route23_guard_count, "_" + urlSearch.get("vrc"));
-	}
-	if (isIntLessThan(urlSearch.get("e4r"), 2)) {
-		setSettingClass(elite_four_requirement, "_" + urlSearch.get("e4r"));
-	}
-	if (isIntLessThan(urlSearch.get("e4c"), 2)) {
-		setSettingClass(elite_four_count, "_" + urlSearch.get("e4c"));
-	}
-	if (isIntLessThan(urlSearch.get("ccr"), 2)) {
-		setSettingClass(cerulean_cave_requirement, "_" + urlSearch.get("ccr"));
-	}
-	if (isIntLessThan(urlSearch.get("ccc"), 2)) {
-		setSettingClass(cerulean_cave_count, "_" + urlSearch.get("ccc"));
+	if (isIntLessThan(urlSearch.get("rc"), 1)) {
+		setSettingClass(randomize_consumables, "_" + urlSearch.get("rc"));
 	}
 
 	if (urlSearch.get("name") && urlSearch.get("port")) {
