@@ -30,6 +30,10 @@ function addOnClick() {
 		group.onmouseenter = function() {locationOnHover(group);};
 		group.onmouseleave = function() {locationOnUnHover(group);};
 	}
+	for (let iterItem of document.getElementsByClassName("iterItem")) {
+		iterItem.onmouseenter = function() {itemOnHover(iterItem);};
+		iterItem.onmouseleave = function() {itemOnUnHover();};
+	}
 }
 function isIntLessThan(check, max) {
 	let intValue = parseInt(check, 10);

@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="locations.css">
 	<link rel="stylesheet" href="items.css">
 	<script src="static/locationType.js" type="text/javascript"></script>
+	<script src="static/archIds.js" type="text/javascript"></script>
+	<script src="static/idToString.js" type="text/javascript"></script>
 	<script src="index.js" type="text/javascript"></script>
 	<script src="logic.js" type="text/javascript"></script>
 	<script src="sync.js" type="text/javascript"></script>
@@ -67,9 +69,9 @@
 				<div class="sub" id="EVENT_1_3"></div>
 			</div>
 			<div class="group" id="grass_land_stage_4">
-				<div class="sub" id="grass_land_4_u1"></div>
 				<div class="sub" id="grass_land_4_m1"></div>
 				<div class="sub" id="grass_land_4_m2"></div>
+				<div class="sub" id="grass_land_4_u1"></div>
 				<div class="sub" id="grass_land_4_m3"></div>
 				<div class="sub" id="grass_land_chao"></div>
 				<div class="sub" id="grass_land_4"></div>
@@ -105,23 +107,23 @@
 				<div class="sub" id="EVENT_2_2"></div>
 			</div>
 			<div class="group" id="ripple_field_stage_3">
-				<div class="sub" id="ripple_field_3_u1"></div>
 				<div class="sub" id="ripple_field_3_m1"></div>
+				<div class="sub" id="ripple_field_3_u1"></div>
 				<div class="sub" id="ripple_field_elieel"></div>
 				<div class="sub" id="ripple_field_3"></div>
 				<div class="sub" id="EVENT_2_3"></div>
 			</div>
 			<div class="group" id="ripple_field_stage_4">
-				<div class="sub" id="ripple_field_4_u1"></div>
 				<div class="sub" id="ripple_field_4_m1"></div>
+				<div class="sub" id="ripple_field_4_u1"></div>
 				<div class="sub" id="ripple_field_4_m2"></div>
 				<div class="sub" id="ripple_field_toad"></div>
 				<div class="sub" id="ripple_field_4"></div>
 				<div class="sub" id="EVENT_2_4"></div>
 			</div>
 			<div class="group" id="ripple_field_stage_5">
-				<div class="sub" id="ripple_field_5_u1"></div>
 				<div class="sub" id="ripple_field_5_m1"></div>
+				<div class="sub" id="ripple_field_5_u1"></div>
 				<div class="sub" id="ripple_field_5_m2"></div>
 				<div class="sub" id="ripple_field_mama_pitch"></div>
 				<div class="sub" id="ripple_field_5"></div>
@@ -156,8 +158,8 @@
 				<div class="sub" id="EVENT_3_3"></div>
 			</div>
 			<div class="group" id="sand_canyon_stage_4">
-				<div class="sub" id="sand_canyon_4_u1"></div>
 				<div class="sub" id="sand_canyon_4_m1"></div>
+				<div class="sub" id="sand_canyon_4_u1"></div>
 				<div class="sub" id="sand_canyon_4_m2"></div>
 				<div class="sub" id="sand_canyon_hikari"></div>
 				<div class="sub" id="sand_canyon_4"></div>
@@ -165,10 +167,10 @@
 			</div>
 			<div class="group" id="sand_canyon_stage_5">
 				<div class="sub" id="sand_canyon_5_u1"></div>
+				<div class="sub" id="sand_canyon_5_m1"></div>
 				<div class="sub" id="sand_canyon_5_u2"></div>
 				<div class="sub" id="sand_canyon_5_u3"></div>
 				<div class="sub" id="sand_canyon_5_u4"></div>
-				<div class="sub" id="sand_canyon_5_m1"></div>
 				<div class="sub" id="sand_canyon_nyupun"></div>
 				<div class="sub" id="sand_canyon_5"></div>
 				<div class="sub" id="EVENT_3_5"></div>
@@ -277,9 +279,6 @@
 		updateLocations();
 		updateGroups();
 		countchecks();
-		(async() => {
-			await loadStaticContent();
-			connect();
-		})()
+		connect();
 	</script>
 <html>

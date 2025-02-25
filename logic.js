@@ -438,8 +438,13 @@ const locationLogic = {
 		return can_level(4);
 	},
 	"cloudy_park_hibanamodoki": function() {
-		if (has("Coo") && has("Cleaning")) {
-			return can_level(4);
+		if (can_level(4) && has("Cleaning")) {
+			if (has("Coo")) {
+				return "logical";
+			}
+			if (has("Rick")) {
+				return "possible";
+			}
 		}
 	},
 	"cloudy_park_1": function() {
