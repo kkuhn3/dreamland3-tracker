@@ -1,21 +1,23 @@
+let ahost = "archipelago.gg";
 let aport = false;
-let pname = false;
+let aname = false;
+let apass = "";
 
 // https://github.com/ArchipelagoMW/Archipelago/blob/main/worlds/kdl3/locations.py
 const offset = 0;
 
 function connect() {
-	if (!aport || !pname) {
+	if (!aport || !aname) {
 		return;
 	}
-	socket = new WebSocket("wss://archipelago.gg:" + aport);
+	socket = new WebSocket("wss://" + ahost + ":" + aport);
 
 	socket.addEventListener('open', function (event) {
 		socket.send(`[{
 			"cmd" : "Connect",
-			"password" : "",
+			"password" : "` + apass + `",
 			"game" : "Kirby's Dream Land 3",
-			"name" : "` + pname + `",
+			"name" : "` + aname + `",
 			"tags" : ["Tracker"],
 			"version" : {
 				"major": 0,
