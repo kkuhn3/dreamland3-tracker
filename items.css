@@ -45,64 +45,82 @@
 }
 
 /* Settings */
-#stages_for_boss._0 {
+#goal_speed._0 {
+	background-image: url(./images/settings/goal_speed_0.png);
+}
+#goal_speed._1 {
+	background-image: url(./images/settings/goal_speed_1.png);
+}
+#strict_bosses._0 {
+	background-image: url(./images/settings/strict_bosses_0.png);
+}
+#strict_bosses._1 {
+	background-image: url(./images/settings/strict_bosses_1.png);
+}
+#open_world._0 {
+	background-image: url(./images/settings/open_world_0.png);
+}
+#open_world._1 {
+	background-image: url(./images/settings/open_world_1.png);
+}
+#ow_boss_requirement._0 {
 	background-image: url(./images/settings/sc_0.png);
 }
-#stages_for_boss._1 {
+#ow_boss_requirement._1 {
 	background-image: url(./images/settings/sc_1.png);
 }
-#stages_for_boss._2 {
+#ow_boss_requirement._2 {
 	background-image: url(./images/settings/sc_2.png);
 }
-#stages_for_boss._3 {
+#ow_boss_requirement._3 {
 	background-image: url(./images/settings/sc_3.png);
 }
-#stages_for_boss._4 {
+#ow_boss_requirement._4 {
 	background-image: url(./images/settings/sc_4.png);
 }
-#stages_for_boss._5 {
+#ow_boss_requirement._5 {
 	background-image: url(./images/settings/sc_5.png);
 }
-#stages_for_boss._6 {
+#ow_boss_requirement._6 {
 	background-image: url(./images/settings/sc_6.png);
 }
-#hearts_for_boss._0 {
+#hs_boss_requirement._0 {
 	background-image: url(./images/settings/hs_0.png);
 }
-#hearts_for_boss._1 {
+#hs_boss_requirement._1 {
 	background-image: url(./images/settings/hs_1.png);
 }
-#hearts_for_boss._2 {
+#hs_boss_requirement._2 {
 	background-image: url(./images/settings/hs_2.png);
 }
-#hearts_for_boss._3 {
+#hs_boss_requirement._3 {
 	background-image: url(./images/settings/hs_3.png);
 }
-#hearts_for_boss._4 {
+#hs_boss_requirement._4 {
 	background-image: url(./images/settings/hs_4.png);
 }
-#hearts_for_boss._5 {
+#hs_boss_requirement._5 {
 	background-image: url(./images/settings/hs_5.png);
 }
-#hearts_for_boss._6 {
+#hs_boss_requirement._6 {
 	background-image: url(./images/settings/hs_6.png);
 }
-#hearts_for_boss._7 {
+#hs_boss_requirement._7 {
 	background-image: url(./images/settings/hs_7.png);
 }
-#hearts_for_boss._8 {
+#hs_boss_requirement._8 {
 	background-image: url(./images/settings/hs_8.png);
 }
-#hearts_for_boss._9 {
+#hs_boss_requirement._9 {
 	background-image: url(./images/settings/hs_9.png);
 }
-#hearts_for_boss._10 {
+#hs_boss_requirement._10 {
 	background-image: url(./images/settings/hs_10.png);
 }
-#randomize_consumables._0 {
+#consumables._0 {
 	background-image: url(./images/settings/rc_0.png);
 }
-#randomize_consumables._1 {
+#consumables._1 {
 	background-image: url(./images/settings/rc_1.png);
 }
 

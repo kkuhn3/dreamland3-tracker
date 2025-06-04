@@ -139,8 +139,11 @@ function itemOnClick(item) {
 
 //Settings
 //Settings - Helper
+function getSettingState(setting) {
+	return parseInt(setting.classList[1].substring(1), 10);
+}
 function settingIterate(setting, max) {
-	let count = parseInt(setting.classList[1].substring(1), 10);
+	let count = getSettingState(setting);
 	setting.classList.remove(setting.classList[1]);
 	count = count + 1;
 	if (count > max) {
@@ -175,7 +178,7 @@ function settingIterateOnClick(div, count) {
 	}
 }
 function shuffleConsumablesOnClick() {
-	settingIterate(randomize_consumables, 1);
+	settingIterate(consumables, 1);
 	groupBreakDown.innerHTML = "";
 	hideToMatchConsumables();
 	updateLocations();
@@ -186,7 +189,7 @@ function shuffleConsumablesOnClick() {
 	}
 }
 function hideToMatchConsumables() {
-	const enumInt = parseInt(randomize_consumables.classList[1].substring(1), 10);
+	const enumInt = getSettingState(consumables);
 	if (enumInt === 0) {
 		for (let divId of consumableLocs) {
 			let div = document.getElementById(divId);
@@ -338,14 +341,10 @@ function countchecks() {
 //Parse URL inputs
 function parseSettings() {
 	const urlSearch = new URLSearchParams(window.location.search);
-	if (isIntLessThan(urlSearch.get("sb"), 6)) {
-		setSettingClass(stages_for_boss, "_" + urlSearch.get("sb"));
-	}
-	if (isIntLessThan(urlSearch.get("hb"), 6)) {
-		setSettingClass(hearts_for_boss, "_" + urlSearch.get("hb"));
-	}
-	if (isIntLessThan(urlSearch.get("rc"), 1)) {
-		setSettingClass(randomize_consumables, "_" + urlSearch.get("rc"));
+	for (const setting of document.getElementsByClassName("setting")) {
+		if (urlSearch.get(setting.id) != null) {
+			setSettingClass(setting, "_" + urlSearch.get(setting.id));
+		}
 	}
 
 	if (urlSearch.get("name") && urlSearch.get("port")) {

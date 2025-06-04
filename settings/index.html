@@ -31,8 +31,29 @@
 		Randomizer Settings
 	</div>
 	<div>
-		<label>Stages per Boss</label>
-		<select id="SB">
+		<label>goal_speed</label>
+		<select id="goal_speed">
+			<option value="" selected>Normal</option>
+			<option value="1">Fast</option>
+		</select>
+	</div>
+	<div>
+		<label>Strict Bosses</label>
+		<select id="strict_bosses">
+			<option value="0">False</option>
+			<option value="" selected>True</option>
+		</select>
+	</div>
+	<div>
+		<label>Open World</label>
+		<select id="open_world">
+			<option value="0">False</option>
+			<option value="" selected>True</option>
+		</select>
+	</div>
+	<div>
+		<label>Open World Boss Requirement</label>
+		<select id="ow_boss_requirement">
 			<option value="0">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
@@ -44,7 +65,7 @@
 	</div>
 	<div>
 		<label>Heart Stars per Boss</label>
-		<select id="HB">
+		<select id="hs_boss_requirement">
 			<option value="0">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
@@ -52,15 +73,23 @@
 			<option value="4">4</option>
 			<option value="5">5</option>
 			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
 		</select>
 	</div>
 	<div>
-		<label>Randomize Consumables</label>
-		<select id="RC">
+		<label>Consumables</label>
+		<select id="consumables">
 			<option value="0">Vanilla</option>
 			<option value="" selected>Randomized</option>
 		</select>
 	</div>
+	<!-- starsanity -->
+	<!-- stage_shuffle -->
+	<!-- animal_randomization -->
+	<!-- copy_ability_randomization -->
 	
 	<div class="header">
 		Ready?

@@ -23,8 +23,8 @@ body {
 }
 /*Settings*/
 .setting {
-	width: 3.33333333333vw;
-	height: 3.33333333333vw;
+	width: calc(20vw / 9);
+	height: calc(20vw / 9);
 	background-size: contain;
 	float: left;
 	cursor: pointer;
@@ -41,9 +41,9 @@ body {
 .notImageImage {
 	cursor: default;
 	color: silver;
-	font-size: 1.6vw;
+	font-size: 1.2vw;
 	text-align: center;
-	line-height: 3.33333333333vw;
+	line-height: calc(20vw / 9);
 	box-shadow: 0 1px 0 0 #d3dfeb inset, 1px 0 0 0 #d3dfeb inset, -1px 0 0 0 #d3dfeb inset, 0 -1px 0 0 #d3dfeb inset;
 }
 .setting.notImageImage:hover {

@@ -2,6 +2,7 @@ let ahost = "archipelago.gg";
 let aport = false;
 let aname = false;
 let apass = "";
+let requiredHeartStars = false;
 
 // https://github.com/ArchipelagoMW/Archipelago/blob/main/worlds/kdl3/locations.py
 const offset = 0;
@@ -21,7 +22,7 @@ function connect() {
 			"tags" : ["Tracker"],
 			"version" : {
 				"major": 0,
-				"minor": 5,
+				"minor": 6,
 				"build": 1,
 				"class": "Version"
 			},
@@ -54,6 +55,8 @@ function connect() {
 					if (currentGroup) {
 						groupFocus(document.getElementById(currentGroup));
 					}
+					// Todo - one day KDL3 might include slot_data for tracker stuffs
+					// settingsFromSlotData(command.slot_data)
 					updateLocations();
 					updateGroups();
 					countchecks();
@@ -136,4 +139,16 @@ function gotLocation(id) {
 		}
 
 	}
+}
+
+function settingsFromSlotData(slotData) {
+	for (const setting of document.getElementsByClassName("setting")) {
+		if (slotData[setting.id] != null) {
+			setSettingClass(setting, "_" + slotData[setting.id]);
+		}
+	}
+	// Special case for hs_boss_requirement
+	requiredHeartStars = Math.min(Math.max(slotData[max_heart_stars] * slotData[heart_stars_required] / 100, 5), 99);
+	setSettingClass(hs_boss_requirement, "_" + requiredHeartStars / 5);
+	hideToMatchConsumables();
 }
